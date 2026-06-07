@@ -1,0 +1,24 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# --- Virtual environments (recreated locally, never committed) ---
+venv/
+.venv/
+env/
+
+# --- App runtime cache (regenerated on first run) ---
+data/*.parquet
+
+# --- macOS ---
+.DS_Store
+
+# --- Editors ---
+.vscode/
+.idea/
+
+# NOTE: .streamlit/secrets.toml is intentionally committed here so the app
+# runs out of the box. It holds only a free, no-billing EIA Open Data key
+# that can be regenerated at https://www.eia.gov/opendata/register.php
